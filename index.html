@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- xlsx.js (C) 2013-present  SheetJS http://sheetjs.com -->
+<!-- vim: set ts=2: -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SheetJS Electron Demo</title>
+
+<link rel="stylesheet" href="./src/css.css">
+<link rel="stylesheet" href="./src/bootstrap-grid.min.css">
+
+</head>
+<body>
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col one">
+        <div  class="btns">
+                <h2>Вывод словаря</h2>
+                
+				
+
+
+
+<button id="readf">Выбирите файл</button><br />
+<div style="display: none;" id="drop">Перетащите файл</div>
+<input style="display: none;" type="file" name="xlfile" id="xlf" /> 
+
+
+<p><input style="display: none;" type="submit" value="Экспорт данных" id="xport" onclick="export_xlsx();" disabled="true"></p>
+
+                <button id="refresh" type="button">Очистить</button>
+
+
+                <div  class="btns">
+                <h2>Сортировка</h2>
+                <button onclick="sortTable(0)" id="sorter" type="button">Сортировка А-Я</button>
+                </div> 
+                <br />
+
+                <div  class="btns">
+                <h2>Поиск слова</h2>
+                        <input type="text" placeholder="Поиск слова" id="search">
+                </div> 
+                <br />
+
+                <div  class="btns">
+                <h2>Хеширование слова</h2>
+                <button type="button">Хеширование</button>
+                </div> 
+                <br />
+
+        </div> 
+      <br />
+    </div>
+        <div class="col">
+                <div id="htmlout"></div>
+        </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./index.js"></script>
+
+<script>window.$ = window.jQuery = require('./src/jquery-3.4.1.min.js');</script>
+
+<script src="./src/sort.js"></script>
+
+
+</body>
+</html>

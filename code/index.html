@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="./src/css.css">
+        <link rel="stylesheet" href="./src/bootstrap-grid.min.css">
+</head>
+<body>
+       
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <div  class="btns">
+                <h2>Вывод словаря</h2>
+                <input type="file" id="excelfile" />  
+                <input type="button" id="viewfile" value="Импорт таблицы" onclick="ExportToTable()" />  
+                <button id="refresh" type="button">Очистить</button>
+
+
+                <div  class="btns">
+                <h2>Сортировка</h2>
+                <button onclick="sortTable(0)" id="sorter" type="button">Сортировка</button>
+                </div> 
+                <br />
+
+                <div  class="btns">
+                <h2>Поиск слова</h2>
+                        <input type="text" placeholder="Поиск слова" id="search-text" onkeyup="tableSearch()">
+                </div> 
+                <br />
+
+                <div  class="btns">
+                <h2>Хеширование слова</h2>
+                <button type="button">Хеширование</button>
+                </div> 
+                <br />
+
+        </div> 
+      <br />
+    </div>
+        <div class="col">
+                <table id="exceltable">
+                        <tbody>
+                                
+                        </tbody>                        
+                </table>
+        </div>
+  </div>
+</div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+        <script>window.$ = window.jQuery = require('./src/jquery-3.4.1.min.js');</script>
+
+        <script src="./src/xlsx.core.min.js"></script>  
+        <script src="./src/xls.core.min.js"></script>  
+
+        <script src="./src/sort.js"></script>
+</body>
+</html>

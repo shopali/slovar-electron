@@ -1,0 +1,19 @@
+{
+		"name": "slovar",
+		"author": "Danil",
+		"productName": "Electron tutorial app",
+		"version": "0.0.1",
+		"main": "main.js",
+		"dependencies": {
+				"pretty-bytes": "^2.0.1",
+				"xlsx": "^0.14.3"
+		},
+		"devDependencies": {
+				"electron-app": "file:electron",
+				"electron-packager": "^13.1.1",
+				"electron-prebuilt": "^0.35.2"
+		},
+		"scripts": {
+				"start": "electron main.js"
+		}
+}
